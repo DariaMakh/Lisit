@@ -1,0 +1,69 @@
+$menu-color: #3E3E3F;
+$text-color: #131313;
+$red: #FF450E;
+
+$font: 'Golos';
+
+@mixin btn($background, $color, $border){
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  padding: 18px 60px;
+  background: $background;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  border: $border;
+  border-radius: 4px;
+
+  text-decoration: none;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin btn-hover($background, $color, $border){
+  background: $background;
+  color: $color;
+  border: $border;
+}
+
+%btn-red{
+  @include btn($red, #fff, 1px solid transparent);
+  &:hover{
+    @include btn-hover(transparent, $red, 1px solid $red);
+    & .arrow{
+      background: url(../img/btn-arrow-red.png);
+    }
+  }
+}
+
+%btn-white{
+  @include btn(transparent, $red, 1px solid $red);
+  & .arrow{
+    background: url(../img/btn-arrow-red.png);
+  }
+  &:hover{
+    @include btn-hover($red, #fff, 1px solid transparent);
+    & .arrow{
+      background: url(../img/btn-arrow-white.png);
+    }
+  }
+}
+
+%btn-black{
+  @include btn(transparent, $text-color, 1px solid $text-color);
+  & .arrow{
+    background: url(../img/btn-arrow-black.png);
+  }
+  &:hover{
+    @include btn-hover(transparent, $red, 1px solid $red);
+    & .arrow{
+      background: url(../img/btn-arrow-red.png);
+    }
+  }
+}

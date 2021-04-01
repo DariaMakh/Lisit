@@ -1,0 +1,144 @@
+@media (max-width: 1730px) {
+  .burger{
+      display: block;
+      margin-left: 40px;
+  }
+
+  .nav{
+      padding: 30px 20px;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+
+  .menu{
+      display: none;
+  }
+
+  .logo{
+      justify-content: initial;
+      flex-grow: 1;
+  }
+
+  .section{
+      padding: 50px 0;
+      &__list{
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      &__item{
+          width: 48%;
+          margin-left: 0;
+          margin-bottom: 30px;
+          &:nth-last-child(-n+2){
+              margin-bottom: 0;
+          }
+      }
+  }
+}
+
+@media (max-width: 1385px) {
+  .container{
+      width: 100%;
+      padding: 0 20px;
+  }
+  .section{
+      padding: 0;
+      &__list{
+          flex-wrap: wrap;
+          li{
+              margin-left: 0;
+              padding: 30px 25px 30px 25px;
+              width: 33%;
+              // &:first-child::before{
+              //     display: block;
+              // }
+              // &::before{
+              //     content: "";
+              //     display: block;
+              //     position: absolute;
+              //     width: 1px;
+              //     height: 100%;
+              //     left: 0;
+              //     top: 0;
+              //     border: 1px solid #C7CBD8;
+              // }
+              // &::after{
+              //     content: "";
+              //     display: block;
+              //     position: absolute;
+              //     width: 100%;
+              //     height: 0;
+              //     left: 0;
+              //     bottom: 0;
+              //     border: 1px solid #C7CBD8;
+              // }
+              // &:nth-child(3n+1){
+
+              // }
+          }
+      }
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 999px) {
+    .nav{
+      &__contacts{
+          display: none;
+        }
+    }
+    .lang{
+      display: none;
+    }
+    .banner{
+      padding: 40px 0;
+    }
+    .h1{
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    .box{
+        padding: 50px 0;
+        &__row{
+            flex-direction: column;
+        }
+        &__left-img{
+          transform: rotate(-180deg);
+          top: 300px;
+          left: inherit;
+          right: 0;
+      }
+      &__block{
+          &_margin{
+              margin-top: 500px;
+          }
+          &:nth-child(2) {
+              width: 100%;
+          }
+      }
+      &__icon{
+          position: absolute;
+          top: 0;
+      }
+      &__img{
+          top: 300px;
+          left: 5%;
+          transform: translate(0);
+          max-width: 100%;
+          max-height: 400px;
+          img{
+              max-width: 100%;
+              max-height: 400px;
+          }
+      }
+      &__title{
+          margin-top: 100px;
+      }
+      .btn{
+        &-photo{
+            display: block;
+            @extend %btn-black;
+        }
+      }
+
+    }
+}

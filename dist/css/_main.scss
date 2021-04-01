@@ -1,0 +1,92 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	-webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+	max-height: 1000000000px;
+  font-family: "Golos";
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea, select {
+	outline: none;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 17px;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 20px;
+}
+ul, li  {
+	list-style-image: none;
+	list-style: none;
+}
+
+button {
+  border-style: none;
+  border-width: 0;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+// SCROLL
+
+::-webkit-scrollbar {
+  width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cecece;
+}
+
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
