@@ -61,7 +61,7 @@
 .sub-menu{
   display: none;
   position: absolute;
-  top: 121px;
+  top: 125px;
   left: 0;
   background-color: #fff;
   width: 100%;
@@ -83,7 +83,7 @@
     }
     a{
       margin-left: 20px;
-      font-family: Golos;
+      font-family: $font;
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -92,6 +92,7 @@
       color: $menu-color;
       max-width: 120px;
       width: fit-content;
+      padding-bottom: 0;
       &:hover{
         color: $red;
       }
@@ -106,8 +107,16 @@
     &:first-child{
       margin-left: 0;
     }
-    &:hover .sub-menu{
-      display: flex;
+    &:hover {
+      & .sub-menu{
+        display: flex;
+      }
+      & .menu__link-item{
+        padding-bottom: 70px;
+        &::after{
+          bottom: 19px;
+        }
+      }
     }
     &>a{
       position: relative;

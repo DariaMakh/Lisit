@@ -201,6 +201,7 @@
     @extend %btn-white;
     &-photo{
       display: none;
+      @extend %btn-black;
     }
   }
   &__price{
@@ -238,6 +239,7 @@
       line-height: 120%;
       color: $text-color;
       position: relative;
+      margin-top: 10px;
       &::before{
         content: '';
         display: block;

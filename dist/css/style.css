@@ -76,7 +76,7 @@
   background: url(../img/btn-arrow-white.png);
 }
 
-.section .btn {
+.section .btn, .box .btn-photo {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,17 +103,17 @@
   color: #131313;
 }
 
-.section .btn .arrow {
+.section .btn .arrow, .box .btn-photo .arrow {
   background: url(../img/btn-arrow-black.png);
 }
 
-.section .btn:hover {
+.section .btn:hover, .box .btn-photo:hover {
   background: transparent;
   color: #FF450E;
   border: 1px solid #FF450E;
 }
 
-.section .btn:hover .arrow {
+.section .btn:hover .arrow, .box .btn-photo:hover .arrow {
   background: url(../img/btn-arrow-red.png);
 }
 
@@ -345,7 +345,7 @@ button:focus {
 .sub-menu {
   display: none;
   position: absolute;
-  top: 121px;
+  top: 125px;
   left: 0;
   background-color: #fff;
   width: 100%;
@@ -379,7 +379,7 @@ button:focus {
 
 .sub-menu li a {
   margin-left: 20px;
-  font-family: Golos;
+  font-family: "Golos";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -390,6 +390,7 @@ button:focus {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-bottom: 0;
 }
 
 .sub-menu li a:hover {
@@ -408,6 +409,14 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu__link:hover .menu__link-item {
+  padding-bottom: 70px;
+}
+
+.menu__link:hover .menu__link-item::after {
+  bottom: 19px;
 }
 
 .menu__link > a {
@@ -774,6 +783,7 @@ button:focus {
   line-height: 120%;
   color: #131313;
   position: relative;
+  margin-top: 10px;
 }
 
 .box__list li::before {
@@ -881,9 +891,6 @@ button:focus {
     width: 100%;
     padding: 0 20px;
   }
-  .section {
-    padding: 0;
-  }
   .section__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -893,9 +900,15 @@ button:focus {
     padding: 30px 25px 30px 25px;
     width: 33%;
   }
+  .box__img {
+    -webkit-transform: translate(-85%, -50%);
+            transform: translate(-85%, -50%);
+    max-width: 45%;
+    max-height: 550px;
+  }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
   .nav__contacts {
     display: none;
   }
@@ -918,6 +931,15 @@ button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .box__row_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .box__row_reverse .box__text {
+    margin-top: 20px;
+  }
   .box__left-img {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
@@ -925,11 +947,24 @@ button:focus {
     left: inherit;
     right: 0;
   }
+  .box__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .box__block_margin {
-    margin-top: 500px;
+    margin-top: 670px;
   }
   .box__block:nth-child(2) {
     width: 100%;
+  }
+  .box__block_btns {
+    position: absolute;
+    top: 700px;
   }
   .box__icon {
     position: absolute;
@@ -940,7 +975,7 @@ button:focus {
     left: 5%;
     -webkit-transform: translate(0);
             transform: translate(0);
-    max-width: 100%;
+    max-width: 90%;
     max-height: 400px;
   }
   .box__img img {
@@ -950,8 +985,45 @@ button:focus {
   .box__title {
     margin-top: 100px;
   }
+  .box__title_st {
+    margin-top: 40px;
+  }
+  .box .btn {
+    width: 335px;
+    padding: 18px 85px;
+    margin-top: 20px;
+  }
   .box .btn-photo {
-    display: none;
+    display: block;
+  }
+  .box__price {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .box__text_2 {
+    margin-top: 500px;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+  .box__text_3 {
+    padding-top: 30px;
+    position: initial;
+  }
+  .box__list {
+    width: 90vw;
+  }
+  .box__certificate {
+    margin-top: 40px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 700px) {
+  .section__item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
