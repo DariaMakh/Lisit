@@ -8,6 +8,9 @@
     a:hover{
         color: $red;
     }
+    &-mobile{
+        display: none;
+    }
     &__text{
         font-family: $font;
         font-style: normal;
