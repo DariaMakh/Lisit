@@ -39,7 +39,6 @@
 
 .logo{
   align-items: center;
-  justify-content: space-between;
   &__img{
     width: 165px;
     height: auto;
@@ -47,7 +46,7 @@
     object-position: center;
   }
   &__icon{
-    width: 34px;
+    width: auto;
     height: 28px;
     object-fit: cover;
     object-position: center;

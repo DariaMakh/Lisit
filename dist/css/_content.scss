@@ -29,6 +29,18 @@
 
 .btn{
   @extend %btn-red;
+  &-photo{
+    @extend %btn-black;
+    position: absolute;
+    display: block;
+    background: #3E3E3F;
+    border-radius: 20px 20px 0px 0px;
+    transform: rotate(-90deg)  translateX(25%);
+    left: calc(100% - 164px);
+    top: 50%;
+    padding: 20px 60px;
+    color: #FFFFFF;
+  }
 }
 
 .section{
@@ -114,7 +126,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-60%, -50%);
-    max-width: 50%;
+    max-width: 38%;
     max-height: 650px;
     img{
       max-width: 100%;
@@ -131,9 +143,11 @@
     background-image: url(../img/dark.png);
     background-position: center;
     background-size: cover;
+    z-index: -1;
   }
   &-bg{
     background-color: #F4F5F9;
+    z-index: -2;
     .box__left-img{
       background-image: url(../img/light.png);
     }
@@ -142,6 +156,9 @@
     display: flex;
     &:nth-child(1){
       min-height: 660px;
+    }
+    &:last-child{
+      align-items: flex-end;
     }
   }
   &__block{
@@ -193,16 +210,12 @@
       color: #FF450E;
       width: 320px;
       position: absolute;
-      top: 0;
-      right: 24%;
+      top: 120px;
+      right: 33%;
     }
   }
   .btn{
     @extend %btn-white;
-    &-photo{
-      display: none;
-      @extend %btn-black;
-    }
   }
   &__price{
     border-bottom: 2px solid $red;
@@ -252,9 +265,9 @@
       }
     }
   }
-  & .container{
-    position: relative;
-  }
+  // & .container{
+  //   position: relative;
+  // }
   &__certificate{
       border: 2px solid #3E3E3F;
       box-sizing: border-box;
