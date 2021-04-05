@@ -1,0 +1,35 @@
+.slider{
+  margin-top: 100px;
+  &-container{
+    width: 1730px;
+  }
+  &__item{
+    margin-right: 120px;
+    &:first-child{
+      margin-right: 0;
+    }
+    &_name{
+      margin-top: 10px;
+      font-family: $font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 120%;
+      color: $text-color;
+    }
+  }
+  &__img{
+    height: 280px;
+    width: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    img{
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid $menu-color;
+      border-radius: 3px;
+    }
+  }
+}

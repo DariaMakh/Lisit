@@ -121,6 +121,7 @@
 .box{
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
   &__img{
     position: absolute;
     top: 50%;
@@ -146,10 +147,14 @@
     z-index: -1;
   }
   &-bg{
-    background-color: #F4F5F9;
-    z-index: -2;
-    .box__left-img{
-      background-image: url(../img/light.png);
+    background-image: url(../img/box-bg.jpg);
+    // background-color: #F4F5F9;
+    // z-index: -2;
+    // .box__left-img{
+    //   background-image: url(../img/light.png);
+    // }
+    &_2{
+      background-color: #F4F5F9;
     }
   }
   &__row{
@@ -281,6 +286,81 @@
         object-fit: cover;
         object-position: center;
       }
+  }
+  &-slider{
+    &__row{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__list{
+      display: flex;
+    }
+    &__item{
+      position: relative;
+      margin-left: 40px;
+      font-family: $font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #C7CBD8;
+      cursor: pointer;
+      &:hover{
+        color: $text-color;
+      }
+      &--act{
+        color: $red;
+        &:hover{
+          color: $red;
+        }
+      }
+      &::before{
+        content: '';
+        width: 19px;
+        height: 1px;
+        background-color: #C7CBD8;
+        position: absolute;
+        top: 13px;
+        left: -29px;
+      }
+      &:first-child{
+        margin-left: 0;
+        &::before{
+          display: none;
+        }
+      }
+    }
+    &__btns{
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      & span{
+        font-family: $font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #B7BCCC;
+        margin-right: 30px;
+      }
+      & .btn{
+        padding: initial;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        &:hover{
+          border: 0;
+          background: transparent;
+          color: $text-color;
+          & .arrow{
+            background: url(../img/btn-arrow-black.png);
+          }
+        }
+      }
+    }
   }
 }
 
