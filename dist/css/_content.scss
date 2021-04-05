@@ -148,11 +148,8 @@
   }
   &-bg{
     background-image: url(../img/box-bg.jpg);
-    // background-color: #F4F5F9;
-    // z-index: -2;
-    // .box__left-img{
-    //   background-image: url(../img/light.png);
-    // }
+    background-repeat: no-repeat;
+    background-color: #F4F5F9;
     &_2{
       background-color: #F4F5F9;
     }
@@ -361,27 +358,5 @@
         }
       }
     }
-  }
-}
-
-.burger{
-  display: none;
-  width: 44px;
-  height: 44px;
-  background: #FF450E;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 15px 10px 12px 10px;
-  cursor: pointer;
-  span {
-      display: block;
-      position: relative;
-      width: 24px;
-      height: 17px;
-      transition: .4s;
-      background-image: url(../img/burger-icon.png);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
   }
 }

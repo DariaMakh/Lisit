@@ -192,3 +192,61 @@
     }
   }
 }
+
+$bar-spacing: 7px;
+.burger{
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: #FF450E;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 15px 10px 12px 10px;
+  cursor: pointer;
+
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+      display: block;
+      width: 24px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #fff;
+  }
+  .burger-icon{
+    position: relative;
+    transform: translateY($bar-spacing);
+    background: rgba(255, 255, 255, 1);
+    transition: all 0ms 300ms;
+    
+    &.animate {
+      background: rgba(255, 255, 255, 0); 
+    }
+  }
+  .burger-icon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: $bar-spacing;
+    background: rgba(255, 255, 255, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .burger-icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: $bar-spacing;
+    background: rgba(255, 255, 255, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .burger-icon.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }
+  
+  .burger-icon.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }
+}

@@ -507,6 +507,83 @@ button:focus {
   color: #FF450E;
 }
 
+.burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: #FF450E;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 15px 10px 12px 10px;
+  cursor: pointer;
+}
+
+.burger .burger-icon, .burger .burger-icon::before, .burger .burger-icon::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+.burger .burger-icon {
+  position: relative;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+  background: white;
+  -webkit-transition: all 0ms 300ms;
+  transition: all 0ms 300ms;
+}
+
+.burger .burger-icon.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.burger .burger-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: white;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger .burger-icon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  background: white;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger .burger-icon.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger .burger-icon.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .slider {
   margin-top: 100px;
 }
@@ -717,6 +794,8 @@ button:focus {
 
 .box-bg {
   background-image: url(../img/box-bg.jpg);
+  background-repeat: no-repeat;
+  background-color: #F4F5F9;
 }
 
 .box-bg_2 {
@@ -974,31 +1053,6 @@ button:focus {
   background: url(../img/btn-arrow-black.png);
 }
 
-.burger {
-  display: none;
-  width: 44px;
-  height: 44px;
-  background: #FF450E;
-  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 15px 10px 12px 10px;
-  cursor: pointer;
-}
-
-.burger span {
-  display: block;
-  position: relative;
-  width: 24px;
-  height: 17px;
-  -webkit-transition: .4s;
-  transition: .4s;
-  background-image: url(../img/burger-icon.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .footer {
   width: 100%;
 }
@@ -1192,9 +1246,22 @@ button:focus {
 }
 
 @media (max-width: 1730px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  main {
+    padding-top: 125px;
+  }
   .burger {
     display: block;
     margin-left: 40px;
+  }
+  .lang {
+    margin-left: 20px;
   }
   .nav {
     padding: 30px 20px;
@@ -1203,6 +1270,59 @@ button:focus {
   }
   .menu {
     display: none;
+  }
+  .menu-active {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    background-color: #fff;
+    top: 125px;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 125px;
+  }
+  .menu-active .menu__link {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .menu-active .menu__link a::after, .menu-active .menu__link a::before {
+    display: none;
+  }
+  .menu-active .menu__link:hover .sub-menu {
+    display: block;
+    position: initial;
+    top: initial;
+    padding: 0;
+  }
+  .menu-active .menu__link:hover .sub-menu li {
+    margin-left: 0;
+    padding: 20px 0 10px 30px;
+  }
+  .menu-active .menu__link:hover .sub-menu li a {
+    display: block;
+    max-width: 500px;
+    text-transform: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .menu-active .nav__contacts {
+    display: block;
+  }
+  .menu-active .nav__contacts a {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .menu-active .nav__contacts a:first-child {
+    margin-right: 0;
+    border: 0;
   }
   .logo {
     -webkit-box-pack: initial;
@@ -1282,6 +1402,22 @@ button:focus {
 }
 
 @media (max-width: 1100px) {
+  .nav {
+    padding: 20px;
+  }
+  .nav .logo__img {
+    width: auto;
+    height: 50px;
+  }
+  main {
+    padding-top: 95px;
+  }
+  .menu-active {
+    top: 95px;
+  }
+  .menu__link {
+    position: relative;
+  }
   .container {
     width: 100%;
     padding: 0 20px;

@@ -6,3 +6,15 @@ $('.slider-container').slick({
   swipeToSlide: true, 
   variableWidth: true,
 });
+
+$('.burger').click(function(e){
+  $('.burger-icon').toggleClass('animate');
+  var width = $(window).width();
+  if (width <= 1100){
+    var contacts = $('.nav__contacts');
+    $('.menu').append($(contacts));
+    $('.menu').toggleClass('menu-active');
+  } else if (width > 1100){
+    $('.menu').toggleClass('menu-active');
+  }
+});
