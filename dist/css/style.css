@@ -584,50 +584,6 @@ button:focus {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.slider {
-  margin-top: 100px;
-}
-
-.slider-container {
-  width: 1730px;
-}
-
-.slider__item {
-  margin-right: 120px;
-}
-
-.slider__item:first-child {
-  margin-right: 0;
-}
-
-.slider__item_name {
-  margin-top: 10px;
-  font-family: "Golos";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 120%;
-  color: #131313;
-}
-
-.slider__img {
-  height: 280px;
-  width: auto;
-  background-color: #fff;
-  border-radius: 3px;
-}
-
-.slider__img img {
-  height: 100%;
-  width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border: 2px solid #3E3E3F;
-  border-radius: 3px;
-}
-
 .banner {
   width: 100%;
   padding: 170px 0;
@@ -1053,6 +1009,140 @@ button:focus {
   background: url(../img/btn-arrow-black.png);
 }
 
+.photo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 100vw;
+  height: 100%;
+}
+
+.photo__container--act {
+  top: 0;
+  left: 0;
+}
+
+.photo__container .btn-photo-close {
+  left: 28px;
+}
+
+.photo__box {
+  background: #FFFFFF;
+  margin-left: 160px;
+  width: 100%;
+  padding: 80px 150px 65px 150px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.photo__box_icon {
+  height: 60px;
+  width: 31px;
+  background: url(../img/photo-box-icon.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 80px;
+  left: 129px;
+}
+
+.photo__item {
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.photo__item:nth-child(4) img, .photo__item:nth-child(5) img {
+  height: 375px;
+}
+
+.photo__text {
+  margin-top: 10px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #131313;
+}
+
+.photo__img {
+  width: auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.photo__img img {
+  height: 280px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 2px solid #3E3E3F;
+  border-radius: 3px;
+}
+
+.photo__img:nth-child(4) img {
+  height: 375px;
+}
+
+.slider {
+  margin-top: 100px;
+}
+
+.slider-container {
+  width: 1730px;
+}
+
+.slider__item {
+  margin-right: 120px;
+}
+
+.slider__item:first-child {
+  margin-right: 0;
+}
+
+.slider__img {
+  height: 280px;
+  width: auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.slider__img img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 2px solid #3E3E3F;
+  border-radius: 3px;
+}
+
+.slider__text {
+  margin-top: 10px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #131313;
+}
+
 .footer {
   width: 100%;
 }
@@ -1246,16 +1336,6 @@ button:focus {
 }
 
 @media (max-width: 1730px) {
-  .header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
-  main {
-    padding-top: 125px;
-  }
   .burger {
     display: block;
     margin-left: 40px;
@@ -1402,6 +1482,16 @@ button:focus {
 }
 
 @media (max-width: 1100px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  main {
+    padding-top: 125px;
+  }
   .nav {
     padding: 20px;
   }
@@ -1487,6 +1577,28 @@ button:focus {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .box__block_btns .btn {
+    width: 335px;
+    padding: 18px 85px;
+    margin-top: 20px;
+  }
+  .box__block_btns .btn-photo {
+    position: initial;
+    position: initial;
+    -webkit-transform: initial;
+            transform: initial;
+    background: transparent;
+    border-radius: 4px;
+    width: 335px;
+    padding: 18px 97px;
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #131313;
+  }
   .box__icon {
     position: absolute;
     top: 0;
@@ -1517,28 +1629,6 @@ button:focus {
   }
   .box__title_st {
     margin-top: 40px;
-  }
-  .box .btn {
-    width: 335px;
-    padding: 18px 85px;
-    margin-top: 20px;
-  }
-  .box .btn-photo {
-    position: initial;
-    position: initial;
-    -webkit-transform: initial;
-            transform: initial;
-    background: transparent;
-    border-radius: 4px;
-    width: 335px;
-    padding: 18px 97px;
-    font-family: "Golos";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    text-transform: uppercase;
-    color: #131313;
   }
   .box__price {
     margin-top: 20px;

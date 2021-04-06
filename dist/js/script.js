@@ -18,3 +18,12 @@ $('.burger').click(function(e){
     $('.menu').toggleClass('menu-active');
   }
 });
+
+$('.btn-photo').click(function(e){
+  var box = $(this).parent();
+  $('.photo__container', box).addClass('photo__container--act');
+});
+
+$('.btn-photo-close').click(function(e){
+  $(this).parent().removeClass('photo__container--act');
+});

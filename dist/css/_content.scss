@@ -360,3 +360,116 @@
     }
   }
 }
+
+.photo{
+  &__container{
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    &--act{
+      top: 0;
+      left: 0;
+    }
+    & .btn-photo-close{
+      left: 28px;
+    }
+  }
+  &__box{
+    background: #FFFFFF;
+    margin-left: 160px;
+    width: 100%;
+    padding: 80px 150px 65px 150px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+    &_icon{
+      height: 60px;
+      width: 31px;
+      background: url(../img/photo-box-icon.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 80px;
+      left: 129px;
+    }
+  }
+  &__item{
+    margin-right: 50px;
+    margin-bottom: 30px;
+    &:nth-child(4), &:nth-child(5){
+      img{
+        height: 375px;
+      }
+    }
+  }
+  &__text{
+    margin-top: 10px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color;
+  }
+  &__img{
+    width: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    img{
+      height: 280px;
+      width: auto;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid $menu-color;
+      border-radius: 3px;
+    }
+    &:nth-child(4){
+      img{
+        height: 375px;
+      }
+    }
+  }
+}
+
+.slider{
+  margin-top: 100px;
+  &-container{
+    width: 1730px;
+  }
+  &__item{
+    margin-right: 120px;
+    &:first-child{
+      margin-right: 0;
+    }
+  }
+  &__img{
+    height: 280px;
+    width: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    img{
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid $menu-color;
+      border-radius: 3px;
+    }
+  }
+  &__text{
+    margin-top: 10px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color;
+  }
+}
