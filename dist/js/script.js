@@ -5,6 +5,29 @@ $('.slider-container').slick({
   slidesToScroll: 1,
   swipeToSlide: true, 
   variableWidth: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        arrows: true,
+        nextArrow: $('.slider__next'),
+        prevArrow: $('.slider__prev'),
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        arrows: true,
+        nextArrow: $('.slider__next'),
+        prevArrow: $('.slider__prev'),
+        centerMode: true,
+        centerPadding: '100px',
+      }
+    },
+  ]
 });
 
 $('.burger').click(function(e){
@@ -26,4 +49,9 @@ $('.btn-photo').click(function(e){
 
 $('.btn-photo-close').click(function(e){
   $(this).parent().removeClass('photo__container--act');
+});
+
+$('.box-slider__item').click(function(e){
+  $('.box-slider__item').removeClass('box-slider__item--act');
+  $(this).addClass('box-slider__item--act');
 });

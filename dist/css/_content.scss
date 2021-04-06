@@ -333,7 +333,7 @@
       display: flex;
       align-items: center;
       margin-top: 40px;
-      & span{
+      &>span{
         font-family: $font;
         font-style: normal;
         font-weight: 600;
@@ -440,6 +440,7 @@
 
 .slider{
   margin-top: 100px;
+  position: relative;
   &-container{
     width: 1730px;
   }
@@ -471,5 +472,26 @@
     font-size: 18px;
     line-height: 160%;
     color: $text-color;
+  }
+  &__next, &__prev {
+    display: none;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/slider-arrow.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  &__next{
+    right: -15px;
+  }
+  &__prev{
+    left: -15px;
+    transform: translateY(-50%) rotate(180deg);
   }
 }
