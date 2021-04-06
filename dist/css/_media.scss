@@ -1,5 +1,4 @@
 @media (max-width: 1730px) {
-  
   .burger{
       display: block;
       margin-left: 40px;
@@ -8,8 +7,8 @@
       margin-left: 20px;
   }
   .nav{
+      max-width: 1285px;
       padding: 30px 20px;
-      max-width: 100%;
       margin: 0 auto;
   }
   .menu{
@@ -71,10 +70,23 @@
       flex-grow: 1;
   }
   .section{
-      padding: 50px 0;
+      padding: 20px 0;
       &__list{
+          position: relative;
           flex-wrap: wrap;
-          justify-content: space-between;
+          li{
+              margin-left: 0;
+              width: 33%;
+              padding: 30px 0;
+              &::before{
+                width: 60px;
+              }
+              &:nth-child(4){
+                  &::before{
+                      display: none;
+                  }
+              }
+          }
       }
       &__item{
           width: 48%;
@@ -121,46 +133,31 @@
 }
 
 @media (max-width: 1385px) {
-  .container{
-      padding-right: 75px;
-  }
   .section{
       &__list{
           flex-wrap: wrap;
           li{
-              margin-left: 0;
-              padding: 30px 25px 30px 25px;
-              width: 33%;
-              // &:first-child::before{
-              //     display: block;
-              // }
-              // &::before{
-              //     content: "";
-              //     display: block;
-              //     position: absolute;
-              //     width: 1px;
-              //     height: 100%;
-              //     left: 0;
-              //     top: 0;
-              //     border: 1px solid #C7CBD8;
-              // }
-              // &::after{
-              //     content: "";
-              //     display: block;
-              //     position: absolute;
-              //     width: 100%;
-              //     height: 0;
-              //     left: 0;
-              //     bottom: 0;
-              //     border: 1px solid #C7CBD8;
-              // }
-              // &:nth-child(3n+1){
-
-              // }
+            padding: 20px 0;
+              padding-right: 20px;
+              &::before{
+                  display: none;
+              }
           }
+      }
+      &__item{
+        padding: 30px;
+        &:nth-child(2n+2){
+            margin-left: 2%;
+        }
+        &:nth-last-child(-n+2) {
+            margin-bottom: 30px;
+        }
       }
   }
   .box{
+    .container{
+        padding-right: 75px;
+    }
       &__img{
         transform: translate(-85%, -50%);
         max-width: 45%;
@@ -202,6 +199,7 @@
         padding-top: 125px;
     }
     .nav{
+        max-width: 100%;
         padding: 20px;
         .logo__img{
             width: auto;
@@ -401,7 +399,11 @@
 @media (max-width: 700px) {
     .section{
         &__item{
+            padding: 50px;
             width: 100%;
+            &:nth-child(2n+2){
+                margin-left: 0;
+            }
         }
     }
     .slider{
