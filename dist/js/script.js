@@ -1,6 +1,5 @@
 $('.slider-container').slick({
   swipe: true,
-  // infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   swipeToSlide: true, 
@@ -54,4 +53,12 @@ $('.btn-photo-close').click(function(e){
 $('.box-slider__item').click(function(e){
   $('.box-slider__item').removeClass('box-slider__item--act');
   $(this).addClass('box-slider__item--act');
+});
+
+$('.menu__arrow').click(function(e){
+  // $('.box-slider__item').removeClass('box-slider__item--act');
+  // var link = $(this).parent().parent();
+  // $('.sub-menu', link).toggleClass('sub-menu--act');
+  // $(this).parent().parent().toggleClass('menu__link--act');
+  $(this).toggleClass('menu__arrow--act');
 });
