@@ -23,6 +23,7 @@
         height: 100vh;
         overflow-y: scroll;
         padding-bottom: 125px;
+        z-index: 9999;
         & .menu__link{
             margin-top: 30px;
             margin-left: 30px;
@@ -30,24 +31,6 @@
             width: fit-content;
             & a::after, & a::before{
                 display: none;
-            }
-            &:hover .sub-menu{
-                display: block;
-                position: initial;
-                top: initial;
-                padding: 0;
-                li {
-                    margin-left: 0;
-                    padding: 20px 0 10px 30px;
-                    a{
-                        display: block;
-                        max-width: 500px;
-                        text-transform: initial;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 20px;
-                    }
-                }
             }
         }
         & .nav__contacts{
@@ -64,6 +47,24 @@
             }
         }
       }
+      &__link:hover .sub-menu{
+        display: block;
+        position: initial;
+        top: initial;
+        padding: 0;
+        li {
+            margin-left: 0;
+            padding: 20px 0 10px 30px;
+            a{
+                display: block;
+                max-width: 500px;
+                text-transform: initial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+            }
+        }
+    }
   }
   .logo{
       justify-content: initial;
@@ -74,6 +75,9 @@
       &__list{
           position: relative;
           flex-wrap: wrap;
+          &_2{
+            justify-content: space-between;
+          }
           li{
               margin-left: 0;
               width: 33%;
@@ -89,7 +93,7 @@
           }
       }
       &__item{
-          width: 48%;
+          width: 49%;
           margin-left: 0;
           margin-bottom: 30px;
           &:nth-last-child(-n+2){
@@ -213,10 +217,35 @@
         &-active{
             top: 95px;
         }
+        &__arrow{
+            display: block;
+            &--act{
+                transform: rotate(180deg);
+            }
+        }
         &__link{
             position: relative;
+            &:hover .sub-menu{
+                display: none;
+            }
+            &--act{
+                & .sub-menu{
+                    display: block;
+                }
+            }
         }
     }
+    .sub-menu{
+        &--act{
+            display: block;
+        }
+        &__link{
+            img{
+                display: none;
+            }
+        }
+    }
+
     // .sub-menu{
     //     &::before{
     //         content: '';

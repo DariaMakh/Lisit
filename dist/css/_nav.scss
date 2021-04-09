@@ -101,6 +101,17 @@
 }
 
 .menu{
+  &__arrow{
+    display: none;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    border-color: $red transparent transparent transparent;
+    position: absolute;
+    right: -35px;
+    top: 8px;
+  }
   &__link{
     margin-left: 40px;
     &:first-child{
@@ -216,7 +227,6 @@ $bar-spacing: 7px;
     transform: translateY($bar-spacing);
     background: rgba(255, 255, 255, 1);
     transition: all 0ms 300ms;
-    
     &.animate {
       background: rgba(255, 255, 255, 0); 
     }

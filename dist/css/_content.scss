@@ -41,7 +41,14 @@
     padding: 20px 60px;
     color: #FFFFFF;
   }
+  &-white{
+    @extend %btn-white;
+  }
+  &-black{
+    @extend %btn-black;
+  }
 }
+
 
 .section{
   width: 100%;
@@ -216,9 +223,6 @@
       right: 33%;
     }
   }
-  .btn{
-    @extend %btn-white;
-  }
   &__price{
     border-bottom: 2px solid $red;
     width: fit-content;
@@ -348,6 +352,10 @@
         border: 0;
         background: transparent;
         box-shadow: none;
+        color: $red;
+        & .arrow{
+          background: url(../img/btn-arrow-red.png);
+        }
         &:hover{
           border: 0;
           background: transparent;
