@@ -159,9 +159,9 @@
       }
   }
   .box{
-    .container{
-        padding-right: 75px;
-    }
+      .box-pr{
+          padding-right: 75px;
+      }
       &__img{
         transform: translate(-85%, -50%);
         max-width: 45%;
@@ -245,21 +245,6 @@
             }
         }
     }
-
-    // .sub-menu{
-    //     &::before{
-    //         content: '';
-    //         display: block;
-    //         position: absolute;
-    //         top: 0;
-    //         right: 20px;
-    //         width: 0;
-    //         height: 0;
-    //         border-style: solid;
-    //         border-width: 15px 15px 0 15px;
-    //         border-color: #ff460e transparent transparent transparent
-    //     }
-    // }
     .container{
         width: 100%;
         padding: 0 20px;
@@ -281,9 +266,11 @@
     }
     .box{
         padding: 50px 0;
+        &-pr{
+            padding-right: 50px;
+        }
         & .container{
             position: relative;
-            padding-right: 50px;
         }
         &__row{
             flex-direction: column;

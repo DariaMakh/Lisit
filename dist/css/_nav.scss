@@ -67,6 +67,8 @@
   padding-left: calc(50% - 830px);
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: 9999;
+  border-bottom: 1px solid #C7CBD8;
   &__icon{
     height: 32px;
     width: auto;
