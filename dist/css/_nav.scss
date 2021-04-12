@@ -80,11 +80,14 @@
     width: auto;
     object-fit: cover;
     object-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   li{
     margin-left: 70px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     &:first-child{
       margin-left: 0;
     }
@@ -100,7 +103,12 @@
       max-width: 120px;
       width: fit-content;
       padding-bottom: 0;
-      &:hover{
+    }
+    &:hover{
+      & .sub-menu__icon{
+        filter: none;
+      }
+      & a{
         color: $red;
       }
     }

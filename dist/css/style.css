@@ -369,6 +369,8 @@ button:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .sub-menu li {
@@ -379,6 +381,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .sub-menu li:first-child {
@@ -401,7 +404,12 @@ button:focus {
   padding-bottom: 0;
 }
 
-.sub-menu li a:hover {
+.sub-menu li:hover .sub-menu__icon {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.sub-menu li:hover a {
   color: #FF450E;
 }
 
