@@ -60,15 +60,21 @@
 .sub-menu{
   display: none;
   position: absolute;
-  top: 125px;
+  top: 70px;
   left: 0;
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
-  padding-left: calc(50% - 830px);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 55px;
   z-index: 9999;
   border-bottom: 1px solid #C7CBD8;
+  &__container{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    padding-left: calc(50% - 830px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   &__icon{
     height: 32px;
     width: auto;
