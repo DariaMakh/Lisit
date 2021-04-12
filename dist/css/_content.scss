@@ -110,9 +110,6 @@
     &:first-child{
       margin-left: 0;
     }
-    & .btn{
-      padding: 18px 50px;
-    }
   }
   & .btn{
     @extend %btn-black;
@@ -149,6 +146,9 @@
       line-height: 100%;
       text-transform: uppercase;
       color: #8A92AD;
+    }
+    &:last-child{
+      margin-right: 0;
     }
   }
 }
