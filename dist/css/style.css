@@ -2182,6 +2182,9 @@ button:focus {
   .slider__item {
     margin-right: 80px;
   }
+  .slider-services__btns {
+    bottom: 40px;
+  }
   .section__block {
     margin-top: 20px;
     width: 46%;

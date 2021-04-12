@@ -26,14 +26,23 @@ $('.menu__arrow').click(function(e){
 
 $('#slider-services').slick({
   swipe: true,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   swipeToSlide: true, 
   variableWidth: true,
   arrows: true,
-  // nextArrow: $('.slider-services__next'),
-  // prevArrow: $('.slider-services__prev'),
+  nextArrow: $('.slider-services__next'),
+  prevArrow: $('.slider-services__prev'),
 });
+
+// $('#slider-services').slick({
+//   swipe: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   swipeToSlide: true, 
+//   variableWidth: true,
+//   arrows: false,
+// });
 
 $('.slider-container').slick({
   swipe: true,
