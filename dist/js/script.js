@@ -1,28 +1,12 @@
-$('.slider-services__container').slick({
+$('#slider-services').slick({
   swipe: true,
   slidesToShow: 5,
   slidesToScroll: 1,
   swipeToSlide: true, 
   variableWidth: true,
   arrows: true,
-  nextArrow: $('.slider-services__next'),
-  prevArrow: $('.slider-services__prev'),
-  responsive: [
-    {
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        // centerPadding: '100px',
-      }
-    },
-  ]
+  // nextArrow: $('.slider-services__next'),
+  // prevArrow: $('.slider-services__prev'),
 });
 
 $('.slider-container').slick({

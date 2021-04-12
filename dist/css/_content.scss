@@ -123,6 +123,32 @@
       object-position: center;
     }
   }
+  &__block{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px 35px;
+    margin-right: 55px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    img{
+      margin-right: 20px;
+      width: auto;
+      height: 50px;
+      object-fit: cover;
+      object-position: center;
+    }
+    &_head{
+      font-family: $font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #8A92AD;
+    }
+  }
 }
 
 .box{

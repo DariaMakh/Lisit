@@ -727,6 +727,42 @@ button:focus {
      object-position: center;
 }
 
+.section__block {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 35px;
+  margin-right: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+}
+
+.section__block img {
+  margin-right: 20px;
+  width: auto;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section__block_head {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #8A92AD;
+}
+
 .box {
   padding: 120px 0;
   position: relative;
