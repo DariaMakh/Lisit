@@ -477,10 +477,26 @@ button:focus {
 .menu__link > a:hover::before {
   display: block;
   height: 35px;
-  top: -45px;
+  top: -48px;
 }
 
 .menu__link > a:hover::after {
+  display: block;
+  height: 35px;
+  bottom: -50px;
+}
+
+.menu__link--active > a {
+  color: #FF450E;
+}
+
+.menu__link--active > a::before {
+  display: block;
+  height: 35px;
+  top: -48px;
+}
+
+.menu__link--active > a::after {
   display: block;
   height: 35px;
   bottom: -50px;

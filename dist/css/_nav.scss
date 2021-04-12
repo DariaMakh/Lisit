@@ -167,7 +167,22 @@
         &::before{
           display: block;
           height: 35px;
-          top: -45px;
+          top: -48px;
+        }
+        &::after{
+          display: block;
+          height: 35px;
+          bottom: -50px;
+        }
+      }
+    }
+    &--active{
+      &>a{
+        color: $red;
+        &::before{
+          display: block;
+          height: 35px;
+          top: -48px;
         }
         &::after{
           display: block;
