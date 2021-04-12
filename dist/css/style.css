@@ -414,6 +414,7 @@ button:focus {
 }
 
 .menu__arrow {
+  cursor: pointer;
   display: none;
   width: 0;
   height: 0;
@@ -676,6 +677,10 @@ button:focus {
   top: 50%;
   padding: 20px 60px;
   color: #FFFFFF;
+}
+
+.btn-photo_2 {
+  display: none;
 }
 
 .section {
@@ -1718,19 +1723,6 @@ button:focus {
     padding-bottom: 125px;
     z-index: 9999;
   }
-  .menu-active .nav__contacts {
-    display: block;
-  }
-  .menu-active .nav__contacts a {
-    display: block;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-  }
-  .menu-active .nav__contacts a:first-child {
-    margin-right: 0;
-    border: 0;
-  }
   .menu__arrow {
     display: block;
     right: 30px;
@@ -1792,7 +1784,7 @@ button:focus {
             flex-grow: 1;
   }
   .section {
-    padding: 20px 0;
+    padding: 40px 0;
   }
   .section__list {
     position: relative;
@@ -1873,8 +1865,8 @@ button:focus {
   .section__item:nth-child(2n+2) {
     margin-left: 2%;
   }
-  .section__item:nth-last-child(-n+2) {
-    margin-bottom: 30px;
+  .box {
+    padding: 80px 0;
   }
   .box .box-pr {
     padding-right: 75px;
@@ -1897,9 +1889,19 @@ button:focus {
   }
   .box__text_3 {
     right: 60px;
+    top: 80px;
   }
   .slider-container {
     width: 100%;
+  }
+  .photo__box {
+    padding: 60px;
+  }
+  .photo__item {
+    margin-right: 20px;
+  }
+  .photo__item:nth-child(4) img, .photo__item:nth-child(5) img {
+    height: 330px;
   }
 }
 
@@ -1911,9 +1913,6 @@ button:focus {
     left: 0;
     z-index: 3;
   }
-  main {
-    padding-top: 125px;
-  }
   .nav {
     max-width: 100%;
     padding: 20px;
@@ -1922,23 +1921,33 @@ button:focus {
     width: auto;
     height: 50px;
   }
+  .nav__contacts {
+    display: none;
+  }
+  .nav__contacts a {
+    display: block;
+    margin: 0;
+    padding: 30px;
+  }
+  .nav__contacts a:first-child {
+    margin-right: 0;
+    border: 0;
+    border-bottom: 1px solid #C7CBD8;
+  }
   main {
     padding-top: 95px;
   }
   .menu-active {
     top: 95px;
   }
-  .menu__link {
-    position: relative;
-  }
-  .menu__link:hover .sub-menu {
-    display: none;
+  .menu-active .nav__contacts {
+    display: block;
   }
   .container {
     width: 100%;
     padding: 0 20px;
   }
-  .nav__contacts {
+  .btn-photo {
     display: none;
   }
   .lang {
@@ -1952,13 +1961,14 @@ button:focus {
     margin-bottom: 40px;
   }
   .box {
-    padding: 50px 0;
+    padding: 40px 0;
   }
   .box-pr {
     padding-right: 50px;
   }
   .box .container {
     position: relative;
+    padding: 0 20px;
   }
   .box__row {
     -webkit-box-orient: vertical;
@@ -1974,11 +1984,17 @@ button:focus {
   }
   .box__row_reverse .box__text {
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .box__row:last-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .box__left-img {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
-    top: 300px;
+    top: 200px;
     left: inherit;
     right: 0;
   }
@@ -1992,14 +2008,14 @@ button:focus {
             flex-direction: column;
   }
   .box__block_margin {
-    margin-top: 670px;
+    margin-top: 650px;
   }
   .box__block:nth-child(2) {
     width: 100%;
   }
   .box__block_btns {
     position: absolute;
-    top: 750px;
+    top: 655px;
     left: 20px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -2027,12 +2043,17 @@ button:focus {
     text-transform: uppercase;
     color: #131313;
   }
+  .box__block_btns .btn-black {
+    width: 335px;
+    padding: 18px 96px;
+  }
   .box__icon {
+    height: 70px;
     position: absolute;
     top: 0;
   }
   .box__img {
-    top: 300px;
+    top: 250px;
     left: 5%;
     -webkit-transform: translate(0);
             transform: translate(0);
@@ -2052,11 +2073,11 @@ button:focus {
     max-height: 500px;
   }
   .box__title {
-    margin-top: 100px;
-    font-size: 54px;
+    margin-top: 90px;
+    font-size: 50px;
   }
   .box__title_st {
-    margin-top: 40px;
+    margin-top: 0;
   }
   .box__price {
     margin-top: 20px;

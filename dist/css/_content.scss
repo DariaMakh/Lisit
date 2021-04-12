@@ -40,6 +40,9 @@
     top: 50%;
     padding: 20px 60px;
     color: #FFFFFF;
+    &_2{
+      display: none
+    }
   }
   &-white{
     @extend %btn-white;
@@ -48,7 +51,6 @@
     @extend %btn-black;
   }
 }
-
 
 .section{
   width: 100%;
