@@ -55,7 +55,7 @@
   background: #FF450E;
   -webkit-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   border-radius: 4px;
   text-decoration: none;
   font-family: "Golos";
@@ -1082,14 +1082,6 @@ button:focus {
 
 .box-slider__btns .btn:hover .arrow {
   background: url(../img/btn-arrow-black.png);
-}
-
-.box-services .box__left-img {
-  width: 612px;
-  height: 460px;
-  -webkit-transform: unset;
-          transform: unset;
-  top: 400px;
 }
 
 .box-standarts__block {

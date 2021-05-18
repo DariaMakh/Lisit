@@ -33,7 +33,7 @@ $font: 'Golos';
 }
 
 %btn-red{
-  @include btn($red, #fff, 1px solid #fff);
+  @include btn($red, #fff, 1px solid transparent);
   &:hover{
     @include btn-hover(#fff, $red, 1px solid $red);
     & .arrow{

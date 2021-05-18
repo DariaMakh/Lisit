@@ -5,6 +5,10 @@ $(".menu__link").each(function(){
   }
 });
 
+$('.menu__link-item_disable').click(function(e){
+  e.preventDefault();
+});
+
 $('.burger').click(function(e){
   $('.burger-icon').toggleClass('animate');
   var width = $(window).width();
@@ -34,15 +38,6 @@ $('#slider-services').slick({
   nextArrow: $('.slider-services__next'),
   prevArrow: $('.slider-services__prev'),
 });
-
-// $('#slider-services').slick({
-//   swipe: true,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   swipeToSlide: true, 
-//   variableWidth: true,
-//   arrows: false,
-// });
 
 $('.slider-container').slick({
   swipe: true,
