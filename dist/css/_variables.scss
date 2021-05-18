@@ -33,9 +33,9 @@ $font: 'Golos';
 }
 
 %btn-red{
-  @include btn($red, #fff, 1px solid transparent);
+  @include btn($red, #fff, 1px solid #fff);
   &:hover{
-    @include btn-hover(transparent, $red, 1px solid $red);
+    @include btn-hover(#fff, $red, 1px solid $red);
     & .arrow{
       background: url(../img/btn-arrow-red.png);
     }
@@ -43,12 +43,12 @@ $font: 'Golos';
 }
 
 %btn-white{
-  @include btn(transparent, $red, 1px solid $red);
+  @include btn(#fff, $red, 1px solid $red);
   & .arrow{
     background: url(../img/btn-arrow-red.png);
   }
   &:hover{
-    @include btn-hover($red, #fff, 1px solid transparent);
+    @include btn-hover($red, #fff, 1px solid #fff);
     & .arrow{
       background: url(../img/btn-arrow-white.png);
     }
@@ -56,12 +56,12 @@ $font: 'Golos';
 }
 
 %btn-black{
-  @include btn(transparent, $text-color, 1px solid $text-color);
+  @include btn(#fff, $text-color, 1px solid $text-color);
   & .arrow{
     background: url(../img/btn-arrow-black.png);
   }
   &:hover{
-    @include btn-hover(transparent, $red, 1px solid $red);
+    @include btn-hover(#fff, $red, 1px solid $red);
     & .arrow{
       background: url(../img/btn-arrow-red.png);
     }

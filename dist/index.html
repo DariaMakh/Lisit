@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Lisit</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -56,7 +56,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main">
     <div class="banner">
       <div class="container">
         <h1 class="h1">
@@ -65,7 +65,7 @@
         <a href="#" class="btn">Подробнее о нас<span class="arrow"></span></a>
       </div>
     </div>
-
+  
     <div class="section">
       <div class="container">
         <ul class="section__list">
@@ -74,12 +74,12 @@
             <div class="section__text">Общая площадь</div>
           </li>
           <li>
-            <div class="section__title">4000 м2</div>
-            <div class="section__text">Площадь производственных<br>помещений</div>
-          </li>
-          <li>
             <div class="section__title">24/7</div>
             <div class="section__text">Работаем без выходных</div>
+          </li>
+          <li>
+            <div class="section__title">4000 м2</div>
+            <div class="section__text">Площадь производственных помещений</div>
           </li>
           <li>
             <div class="section__title">доставка</div>
@@ -92,22 +92,23 @@
         </ul>
       </div>
     </div>
-
+  
     <div class="box">
-
-      <div class="box__left-img"></div>
-
+      <div class="box__shape"></div>
       <div class="btn-photo">Смотреть фото</div>
-
-      <div class="container box-pr">
-
+  
+      <div class="container">
         <div class="box__row">
-
-          <div class="box__block">
+  
+          <div class="box__left">
             <div class="box__title">Лазерная<br>резка</div>
-          </div>
 
-          <div class="box__block box__block_margin">
+            <div class="box__img">
+              <img src="img/laser.png" alt="">
+            </div>
+          </div>
+  
+          <div class="box__right">
             <div class="box__icon">
               <img src="img/laser-icon-hover.png" alt="">
             </div>
@@ -117,20 +118,16 @@
               Технологические возможности оборудования позволяют резать металл следующих характеристик
             </div>
           </div>
-
+  
         </div>
-
-        <div class="box__img">
-          <img src="img/laser.png" alt="">
-        </div>
-
+  
         <div class="box__row">
-          <div class="box__block box__block_btns">
-            <a href="#" class="btn-black btn-photo_2">Смотреть фото</a>
+          <div class="box__left">
+            <a href="#" class="btn btn-black btn-photo_2">Смотреть фото</a>
             <a href="#" class="btn btn-white">Подробнее<span class="arrow"></span></a>
           </div>
           
-          <div class="box__block">
+          <div class="box__right">
             <div class="box__price">
               <div class="box__price_text">
                 от
@@ -144,33 +141,33 @@
         </div>
         
       </div>
-
+  
       <div class="photo__container">
         <span class="photo__box_icon"></span>
         <div class="btn-photo btn-photo-close">Закрыть</div>
-
+  
         <div class="photo__box">
-
+  
           <div class="photo__item">
             <div class="photo__img"><img src="img/slider-img_1.jpg" alt=""></div>
             <div class="photo__text">Название детали</div>
           </div>
-
+  
           <div class="photo__item">
             <div class="photo__img"><img src="img/slider-img_2.jpg" alt=""></div>
             <div class="photo__text">Название детали</div>
           </div>
-
+  
           <div class="photo__item">
             <div class="photo__img"><img src="img/slider-img_3.jpg" alt=""></div>
             <div class="photo__text">Название детали</div>
           </div>
-
+  
           <div class="photo__item">
             <div class="photo__img"><img src="img/slider-img_4.jpg" alt=""></div>
             <div class="photo__text">Название детали</div>
           </div>
-
+  
           <div class="photo__item">
             <div class="photo__img"><img src="img/slider-img_5.jpg" alt=""></div>
             <div class="photo__text">Название детали</div>
@@ -178,20 +175,23 @@
           
         </div>
       </div>
-
+  
     </div>
-
+  
     <div class="box box-bg">
-
+      <div class="box__shape"></div>
       <div class="btn-photo">Смотреть фото</div>
-
-      <div class="container box-pr">
+  
+      <div class="container ">
         <div class="box__row">
-          <div class="box__block">
+          <div class="box__left">
             <div class="box__title">Гибка<br>металла</div>
+            <div class="box__img">
+              <img src="img/metal.png" alt="">
+            </div>
           </div>
-
-          <div class="box__block box__block_margin">
+  
+          <div class="box__right">
             <div class="box__icon">
               <img src="img/metal-icon-hover.png" alt="">
             </div>
@@ -204,18 +204,14 @@
             </div>
           </div>
         </div>
-
-        <div class="box__img">
-          <img src="img/metal.png" alt="">
-        </div>
-
+  
         <div class="box__row">
-          <div class="box__block box__block_btns">
-            <a href="#" class="btn-black btn-photo_2">Смотреть фото</a>
+          <div class="box__left">
+            <a href="#" class="btn btn-black btn-photo_2">Смотреть фото</a>
             <a href="#" class="btn btn-white">Подробнее<span class="arrow"></span></a>
           </div>
           
-          <div class="box__block">
+          <div class="box__right">
             <div class="box__price">
               <div class="box__price_text">
                 от
@@ -228,22 +224,23 @@
           </div>
         </div>
       </div>
-
+  
     </div>
-
-    <div class="box">
-
-      <div class="box__left-img"></div>
-
+  
+    <div class="box box-top">
+      <div class="box__shape"></div>
       <div class="btn-photo">Смотреть фото</div>
-
-      <div class="container box-pr">
+  
+      <div class="container ">
         <div class="box__row">
-          <div class="box__block">
+          <div class="box__left">
             <div class="box__title">Пробивные<br>работы</div>
+            <div class="box__img">
+              <img src="img/punching.png" alt="">
+            </div>
           </div>
-
-          <div class="box__block  box__block_margin">
+  
+          <div class="box__right">
             <div class="box__icon">
               <img src="img/punching-icon-hover.png" alt="">
             </div>
@@ -254,18 +251,14 @@
             </div>
           </div>
         </div>
-
-        <div class="box__img">
-          <img src="img/punching.png" alt="">
-        </div>
-
+  
         <div class="box__row">
-          <div class="box__block box__block_btns">
-            <a href="#" class="btn-black btn-photo_2">Смотреть фото</a>
+          <div class="box__left">
+            <a href="#" class="btn btn-black btn-photo_2">Смотреть фото</a>
             <a href="#" class="btn btn-white">Подробнее<span class="arrow"></span></a>
           </div>
           
-          <div class="box__block">
+          <div class="box__right">
             <div class="box__price">
               <div class="box__price_text">
                 от
@@ -278,123 +271,126 @@
           </div>
         </div>
       </div>
-
+  
     </div>
-
+  
     <div class="section">
       <div class="container">
-        <div class="section__list section__list_2">
+        <div class="section__list section__list_wrap">
           <div class="section__item">
             <div class="section__icon">
               <img src="img/welding-icon.png" alt="">
             </div>
-
+  
             <div class="section__title section__title_2">Сварочные работы</div>
-
+  
             <a href="#" class="btn">Подробнее<span class="arrow"></span></a>
           </div>
-
+  
           <div class="section__item">
             <div class="section__icon">
               <img src="img/milling-icon.png" alt="">
             </div>
-
+  
             <div class="section__title section__title_2">фрезерные работы</div>
-
+  
             <a href="#" class="btn">Подробнее<span class="arrow"></span></a>
           </div>
-
+  
           <div class="section__item">
             <div class="section__icon">
               <img src="img/turning-icon.png" alt="">
             </div>
-
+  
             <div class="section__title section__title_2">токарные работы</div>
-
+  
             <a href="#" class="btn">Подробнее<span class="arrow"></span></a>
           </div>
-
+  
           <div class="section__item">
             <div class="section__icon">
               <img src="img/locksmith-icon.png" alt="">
             </div>
-
+  
             <div class="section__title section__title_2">слесарные работы</div>
-
+  
             <a href="#" class="btn">Подробнее<span class="arrow"></span></a>
           </div>
-
+  
         </div>
       </div>
     </div>
-
-    <div class="box box_standarts">
-
+  
+    <div class="box box-standarts">
+  
       <div class="container">
         <div class="box__row">
-          <div class="box__block">
-            <div class="box__title box__title_st">Стандарты<br>качества</div>
-            <div class="box__text box__text_3">входной контроль качества материалов и комплектующих</div>
+          <div class="box__left">
 
-            <div class="box__text box__text_2">
-              На предприятии ведётся контроль качества выпускаемой продукции, а также входящих материалов и комплектующих изделий в строгом соответствии с требованиями:
+            <div class="box__row box__row_justify">
+              <div class="box__title ">Стандарты<br>качества</div>
+              <div class="box__text box__text_3">входной контроль качества материалов и комплектующих</div>
             </div>
+            
+            <div class="box__row box__row_justify">
+              <div class="box-standarts__block">
+                <div class="box__text box__text_2">
+                  На предприятии ведётся контроль качества выпускаемой продукции, а также входящих материалов и комплектующих изделий в строгом соответствии с требованиями:
+                </div>
+      
+                <div class="box__list">
+                  <li>Государственных и отраслевых стандартов;</li>
+                  <li>Конструкторской документации;</li>
+                  <li>Договорами (контрактами) Заказчиков.</li>
+                </div>
+              </div>
 
-            <div class="box__list">
-              <li>Государственных и отраслевых стандартов;</li>
-              <li>Конструкторской документации;</li>
-              <li>Договорами (контрактами) Заказчиков.</li>
+              <div class="box__img box-standarts__img">
+                <img src="img/standart.png" alt="">
+              </div>
             </div>
           </div>
-
-          <div class="box__block">
+  
+          <div class="box__right">
             <div class="box__certificate">
               <img src="img/certificate.png" alt="">
             </div>
-          </div>
-        </div>
-
-        <div class="box__img">
-          <img src="img/standart.png" alt="">
-        </div>
-
-        <div class="box__row box__row_reverse">
-          <div class="box__block">
-            <a href="#" class="btn btn-white">Подробнее<span class="arrow"></span></a>
-          </div>
-          
-          <div class="box__block">
             <div class="box__text">
               Предприятие сертифицировано в соответствии с требованиями<br>ГОСТ Р ИСО 9001–2015
             </div>
           </div>
         </div>
+  
+        <div class="box__row box__row_reverse">
+          <div class="box__left">
+            <a href="#" class="btn btn-white">Подробнее<span class="arrow"></span></a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="box box-bg_2 box-slider">
+  
+    <div class="box box-bg box-slider">
       <div class="container">
         <div class="box-slider__row">
-          <div class="box__title box__title_st">Выполненные<br>работы</div>
-
+          <div class="box__title">Выполненные<br>работы</div>
+  
           <div class="box-slider__list">
-            <div class="box-slider__item box-slider__item--act">
+            <div class="box-slider__item active">
               Лазерная резка
             </div>
-
+  
             <div class="box-slider__item">
               Гибка металла
             </div>
-
+  
             <div class="box-slider__item">
               пробивная работа
             </div>
           </div>
         </div>
-        
-
+  
         <div class="slider">
-
+  
           <div class="slider-container">
             <div class="slider__item">
               <div class="slider__img">
@@ -402,44 +398,44 @@
               </div>
               <div class="slider__text">Название детали</div>
             </div>
-
+  
             <div class="slider__item">
               <div class="slider__img">
                 <img src="img/slider-img_2.jpg" alt="">
               </div>
               <div class="slider__text">Название детали</div>
             </div>
-
+  
             <div class="slider__item">
               <div class="slider__img">
                 <img src="img/slider-img_3.jpg" alt="">
               </div>
               <div class="slider__text">Название детали</div>
             </div>
-
+  
             <div class="slider__item">
               <div class="slider__img">
                 <img src="img/slider-img_4.jpg" alt="">
               </div>
               <div class="slider__text">Название детали</div>
             </div>
-
+  
             <div class="slider__item">
               <div class="slider__img">
                 <img src="img/slider-img_5.jpg" alt="">
               </div>
               <div class="slider__text">Название детали</div>
             </div>
-
+  
           </div>
           
           <div class="slider__prev"></div>
           <div class="slider__next"></div>
           
         </div>
-
+  
         <div class="box-slider__btns">
-          <span>Лазерная резка</span>
+          <span class="slider-item-name">Лазерная резка</span>
           <a href="#" class="btn">Подробнее<span class="arrow"></span></a>
         </div>
       </div>
@@ -455,7 +451,7 @@
             <img src="img/menu-icon-1_1.png" alt="" class="logo__icon">
             <img src="img/menu-icon-2_2.png" alt="" class="logo__icon">
           </div>
-          <div class="footer__text footer__text_2 footer-mobile_2">
+          <div class="footer__text footer__text_2">
             Изготовление деталей от опытного образца до серийного производства
           </div>
         </div>
@@ -493,13 +489,14 @@
           <div class="footer__text footer-hide">
             г.Гатчина, Красносельское ш. д16, к.2Б
           </div>
-          <a href="tel:+7812383-58-46" class="footer__text footer__tel">+7 812 383-58-46</a><span class="footer-mobile">Звонок по РФ бесплатный</span>
+          <a href="tel:+7812383-58-46" class="footer__text footer__tel">+7 812 383-58-46</a>
+          <span class="footer-mobile">Звонок по РФ бесплатный</span>
           
         </div>
 
-        <div class="footer__block footer__block_5 footer-hide">
+        <div class="footer__block footer-hide">
           <div class="footer__title">
-            <img src="img/menu-icon-1_1.png" alt="">
+            <img src="img/menu-icon-1_1.png" alt="" class="footer-hide">
             <div class="footer__text">Предприятие сертифицировано в соответствии с требованиями ГОСТ Р ИСО 9001–2015</div>
           </div>
           <div class="footer__text"><u>English version</u></div>
@@ -509,6 +506,7 @@
             <img src="img/footer-search.png" alt="">
             <span class="footer__text"><u>Поиск по сайту</u></span>
           </div>
+          <div class="footer__text">Мы на <a href="" class="footer__icon"><span class="footer__icon_youtube"></span></a></div>
         </div>
         
       </div>
